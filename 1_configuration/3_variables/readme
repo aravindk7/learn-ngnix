@@ -1,0 +1,5 @@
+Configuration variables
+set $var 'something'
+
+NGINX Module Variables
+$http, $url, $args etc (check documentation)

@@ -1,0 +1,3 @@
+#Ubuntu
+systemctl reload nginx - Reloads the nginx config
+nginx -t - Test the config
