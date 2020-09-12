@@ -1,0 +1,10 @@
+#No of process should match the number of cpu cores
+#If 2 NGINX processes are in a single core then performance will be only 50% for each process 
+#Tells how many cores the cpu has 
+- lscpu
+- nproc 
+# worker_processes auto; will aumatically set the process based on cpu core
+
+#worker_connections - Decides the number of connections each worker process can accept
+# (Server has a max limit to open number of files at once) 
+- ulimit -n 

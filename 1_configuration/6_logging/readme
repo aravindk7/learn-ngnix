@@ -1,0 +1,17 @@
+# Error logs and access logs
+# Enabled by default
+# default location /var/log/nginx/  access.log  error.log
+# 404 will not always be in error.log, it can in access.log as well
+#To set log file location
+
+#logged to both the logs
+location /secure {
+    access_log /var/log/nginx/secure.access.log;
+    access_log /var/log/nginx/access.log;
+    return 2000 "Welcome to the secure area";
+}
+
+#to disable logging
+location /secure {
+    access_log off;
+}

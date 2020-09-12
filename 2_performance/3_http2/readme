@@ -1,0 +1,10 @@
+#HTTP2
+    1. Binary Protocol
+    2. Compressed Headers
+    3. Persistent Connections
+    4. Multiplex Streaming
+    5. Server Push
+
+#ssl is required for HTTP2 module
+#Command to generate self signed cert
+openssl req -x509 -days 1000 -nodes -newkey rsa:2048 -keyout /etc/nginx/ssl/self.key -out /etc/nginx/ssl/self.crt
