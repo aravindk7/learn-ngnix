@@ -1,0 +1,7 @@
+nginx acts as a intermediate between client and actual resource
+
+location /some/path/ {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_pass http://www.example.com/link/;
+}
